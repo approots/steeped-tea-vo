@@ -54,14 +54,12 @@ class Nav extends Component {
   };
 
   handleDrawerToggle = () => {
-    console.log("drawer toggle");
     this.setState({ mobileOpen: !this.state.mobileOpen });
   };
 
   render() {
     const { classes, theme, consultant } = this.props;
-    console.log(theme);
-    console.log("consultant2", consultant);
+
     const drawer = (
       <div className={classes.drawer}>
         <div className={classes.drawerHeader}>

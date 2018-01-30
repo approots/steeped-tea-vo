@@ -13,7 +13,6 @@ const _fetch = (uri, options, json) => {
   if (json) {
     options.body = JSON.stringify(json);
   }
-  console.log("options", options);
   return fetch(url, options);
 };
 
@@ -21,7 +20,6 @@ export const get = uri => {
   return _fetch(uri, { method: "GET" })
     .then(
       res => {
-        console.log("in promise", res);
         return res.json();
       },
       err => {
