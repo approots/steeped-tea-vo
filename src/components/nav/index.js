@@ -40,7 +40,6 @@ const styles = theme => ({
   },
   drawerPaper: {
     width: 250,
-    //height: "100%"
     [theme.breakpoints.up("md")]: {
       width: drawerWidth,
       position: "relative"
