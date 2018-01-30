@@ -19,29 +19,17 @@ class Links extends Component {
   render({ classes }) {
     return (
       <List>
+        <ListItem component={props => <Link href="/" {...props} />} button>
+          <ListItemIcon>
+            <StarIcon />
+          </ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
         <ListItem component={props => <Link href="/party" {...props} />} button>
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
           <ListItemText primary="Party" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <StarIcon />
-          </ListItemIcon>
-          <ListItemText primary="Menu" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <SendIcon />
-          </ListItemIcon>
-          <ListItemText primary="Items" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <DraftsIcon />
-          </ListItemIcon>
-          <ListItemText primary="Here" />
         </ListItem>
       </List>
     );
